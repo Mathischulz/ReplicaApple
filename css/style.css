@@ -1,0 +1,340 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+:root {
+    --background-black: #000000;
+    --background-white: #fdfdfd;
+    --background-div: #e8e8ec;
+
+    --color-titulo: #f5f5f7;
+    --color-p: #86868b;
+    --info-color:#2997ff;
+}
+
+
+/* HEADER */
+
+header {
+    height: 2.7rem;
+    background-color: #0c0c0cfb;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.menu ul {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.menu ul li a {
+color: var(--color-p);
+font-size: .72rem;
+}
+
+.bi-apple,
+.bi-search {
+    font-size: 1rem;
+    color: var(--color-titulo);
+}
+
+
+/* CONTAINER */ 
+
+main {
+    background-color: var(--background-black);
+}
+
+.container {
+    padding-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.titulo, .subtitulo {
+    color: var(--color-titulo);
+}
+
+.titulo h2 {
+    font-size: 3.3rem;
+}
+
+.subtitulo h3 {
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+.texto p {
+    color: var(--color-p);
+    font-size: 1.4rem;
+}
+
+.info a {
+    color: var(--info-color);
+    font-size: 1.3rem;
+    
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.info i {
+    font-size: 1rem;
+}
+
+.img-iphone img {
+    width: 410px;
+}
+
+/* SECTION 1 */
+
+.titulo-black h2 {
+    color: #1d1d1d;
+    font-size: 3.3rem;
+}
+
+.subtitulo-black h3 {
+    color: #1d1d1d;
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+.img-camara img {
+    width: 450px;
+}
+
+
+/* SECTION 2 */
+
+.container-ipad {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--background-div);
+}
+
+.ipad {
+    align-self: center;
+}
+
+.img-ipad img {
+    width: 430px;
+}
+
+/* SECTION 3 */
+
+/* WATCH SE*/
+
+.layout {
+
+    display: grid;
+    grid:
+    "watchse macbookpro" 1fr
+    "airpods watchultra" 1fr
+    "macbookair ipadpro" 1fr / 1fr 1fr;
+    gap: 8px;
+    margin: .6rem;
+}
+
+.watchse { grid-area: watchse; }
+.macbookpro { grid-area: macbookpro; }
+.airpods { grid-area: airpods; }
+.watchultra { grid-area: watchultra; }
+.macbookair { grid-area: macbookair; }
+.ipadpro { grid-area: ipadpro; }
+
+.container-grid {
+    background-color: var(--background-div);
+
+}
+
+.titulo-grid h2 {
+    font-size: 2rem;
+}
+
+.titulo-grid h2 i{
+    font-size: 2rem;
+    color: #000000;
+}
+
+.titulo-grid h5 {
+    color: #ce0000;
+    font-weight: bolder;
+}
+
+.subtitulo-grid h3 {
+    font-weight: lighter;
+}
+
+.info-grid a {
+    color: var(--info-color);
+}
+
+.info-grid i {
+    font-size: .8rem;
+}
+
+.img-grid img{
+    width: 400px;
+}
+
+/* MACBOOK PRO*/
+
+.img-macpro img {
+    margin-top: 3rem;
+}
+
+/* AIRPODS PRO */ 
+
+.airpods {
+    background-color: var(--background-black);
+}
+
+.airpods h2, .airpods h3 {
+    color: var(--color-titulo);
+}
+
+/* WATCH ULTRA */
+
+.watchultra img {
+    margin-top: 4rem;
+    width: 600px;
+}
+
+/* MAC AIR */
+
+.macbookair img {
+    width: 520px;
+    margin-top: 3rem;
+}
+
+/* IPAD PRO */
+
+.ipadpro {
+    background-color: var(--background-black);
+}
+
+.ipadpro h2 {
+    color: var(--color-titulo);
+}
+
+.ipadpro img {
+    margin-top: -2rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #f5f5f5;
+}
+
+.contenedor-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.contenedor-footer p, .contenedor-footer a {
+    font-size: 12px;
+    color: var(--color-p);
+}
+
+.contenedor-footer h6 {
+    font-size: 12px;
+    color: black
+}
+
+.terminos {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-p);
+}
+
+.terminos p {
+    margin-bottom: 1rem;
+}
+
+.terminos a {
+    color: black;
+    text-decoration: underline;
+}
+
+.catalogo {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.catalogo h6 {
+    margin-bottom: 6px;
+}
+
+.catalogo ul li {
+    padding-bottom: 6px;
+}
+
+.distribuidor {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-p);
+}
+
+.distribuidor a {
+    color: var(--info-color);
+    text-decoration: underline;
+}
+
+.piefooter {
+    padding-top: 1rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+}
+
+.politica {
+    display: flex;
+}
+
+.politica .privacidad, .aviso {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid var(--color-p);
+}
+
+.politica .mapa {
+    padding-left: 1rem;
+}
+
+.ubicacion {
+    display: flex;
+}
+
+.ubicacion .america {
+    padding-right: 1rem;
+    border-right: 1px solid var(--color-p);
+}
+
+.ubicacion .english {
+    padding-left: 1rem;
+}
